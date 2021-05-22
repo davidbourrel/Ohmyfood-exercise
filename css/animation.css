@@ -1,0 +1,72 @@
+@keyframes fadein {
+	0% 
+	{
+		opacity: 0;
+		transform:translate3d(0, 30px, 0);
+	}
+	100% 
+	{
+		opacity: 1;
+		transform:translate3d(0, 0, 0);
+		transition: 1s cubic-bezier(0.5,0,0,1);
+	}
+}
+@keyframes fadeInIMG {
+	0% 
+	{
+		opacity: 0;
+	}
+	100% 
+	{
+		opacity: 1;
+	}
+}
+.banner .img-restaurant
+{
+	animation: fadeInIMG 1000ms both 0.5s;
+	height: 230px;
+	opacity: 0;
+}
+
+.card-restaurant:nth-child(1)
+{
+	animation: fadeInIMG 500ms both 0.3s;
+	opacity: 0;
+}
+.card-restaurant:nth-child(2)
+{
+	animation: fadeInIMG 500ms both 0.6s;
+	opacity: 0;
+}
+.card-restaurant:nth-child(3)
+{
+	animation: fadeInIMG 500ms both 0.9s;
+	opacity: 0;
+}
+.card-restaurant:nth-child(4)
+{
+	animation: fadeInIMG 500ms both 1.2s;
+	opacity: 0;
+}
+
+
+.card-menu:nth-child(1) 
+{
+    animation: fadein 500ms both;
+}
+.card-menu:nth-child(2) 
+{
+    animation: fadein 500ms 0.2s both;
+}
+.card-menu:nth-child(3)
+{
+    animation: fadein 500ms 0.4s both;
+}
+.card-menu:nth-child(4)
+{
+    animation: fadein 500ms 0.6s both;
+}
+.card-menu:nth-child(5)
+{
+    animation: fadein 500ms 0.8s both;
+}
